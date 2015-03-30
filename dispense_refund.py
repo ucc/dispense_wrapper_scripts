@@ -1,7 +1,7 @@
 #!/usr/bin/env python 
 import subprocess as sp
 
-sp.call(['tail', '-n3', "/home/other/coke/cokelog"])
+sp.call(['tail', '-n55555', "/home/other/coke/cokelog"])
 
 username=None
 while(not(username)):
