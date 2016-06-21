@@ -10,7 +10,7 @@ while True:
         try:
             sp.check_call(["dispense","acct", username])
             #sp.check_call(["id", username])
-            sp.check_call(["finger", username])
+            #sp.check_call(["finger", username])
 
         except sp.CalledProcessError:
             username = None 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python 
 import subprocess as sp
 
-sp.call(['tail', '-n55555', "/home/other/coke/cokelog"])
+sp.call(['tail', '-n5', "/home/other/coke/cokelog"])
 
 username=None
 while(not(username)):
@@ -9,7 +9,7 @@ while(not(username)):
     try:
         sp.check_call(["dispense","acct", username])
         #sp.check_call(["id", username])
-        sp.check_call(["finger", username])
+        #sp.check_call(["finger", username])
 
     except sp.CalledProcessError:
         username = None 
